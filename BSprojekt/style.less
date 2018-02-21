@@ -1,0 +1,178 @@
+       @tlo: linear-gradient(-20deg, #5DA4FA, white 50%);
+       @shadow: 6px 16px 15px 0px rgba(175, 175, 175, 0.85);
+       //font_style
+       .format() {
+          line-height: 28px;
+          letter-spacing: 3px;
+          color: black;
+          font-family: 'Montserrat', sans-serif;
+       }
+       
+       .flexDirection() {
+          flex-direction: column; //up to down
+          -webkit-flex-direction: column;
+          align-items: stretch; //rozciągnij, aby wypełnić pojemnik
+          -webkit-align-items: center;
+          justify-content: center;
+          -webkit-justify-content: center;
+       }
+       
+       body {
+          background: url(grafika/banner-1058142_1280.jpg) no-repeat;
+          background-attachment: fixed;
+          background-size: contain;
+          background-position: top;
+          .format();
+          header {
+             background-color: ;
+             .container {
+                margin: auto;
+                background: white;
+                margin-bottom: 10px;
+                nav {
+                   h1 {
+                      margin-bottom: 10px;
+                      float: left;
+                   }
+                   p {
+                      float: right;
+                      padding: 8px;
+                      a {
+                         .format();
+                         margin-right: 18px;
+                         &:hover {
+                            cursor: pointer;
+                         }
+                      }
+                   }
+                }
+             }
+          }
+          main {
+             /*scroll up*/
+             .scrollup {
+                width: 34px;
+                height: 34px;
+                text-decoration: none;
+                background: url(grafika/scrollip.png)no-repeat;
+                position: fixed;
+                display: none;
+                right: 3px;
+                bottom: 50px;
+                z-index: 1;
+                &:hover {
+                   cursor: pointer;
+                }
+             }
+             /*scroll up*/
+             background:;
+             .container {
+                /* box-shadow: -0.4px 35px 20px 3px #908e8e;*/
+                letter-spacing: 1px;
+                .row {
+                   .col-lg-12 {
+                      margin-bottom: 20px;
+                      text-align: right;
+                      background: linear-gradient(-15deg, #5DA4FA, white 50%);
+                      padding: 5em 1em 8em;
+                      overflow: hidden;
+                      .flexDirection();
+                   }
+                   .col-lg-6 {
+                      margin-top: 40px;
+                      margin-bottom: 40px;
+                      text-align: center;
+                      padding: 4em 1em 3em;
+                      overflow: hidden;
+                      .flexDirection();
+                   }
+                }
+             }
+          }
+          .container {
+             background: ;
+             .row {
+                .col-lg-4 {
+                   box-shadow: -0.4px 3px 20px 3px #908e8e;
+                   margin: 20px 0px 5px;
+                   padding: 3em 1em 3em;
+                   .format();
+                   border-right: 1px dotted dimgray;
+                   .info {
+                      font-weight: 700;
+                   }
+                }
+                #first {
+                   background: linear-gradient( rgba(255, 255, 255, 0.61) 100%, transparent 100%), url(grafika/financial-2860753_640.jpg)no-repeat;
+                   background-position: center;
+                   background-size: cover;
+                }
+                #second {
+                   background: linear-gradient( rgba(255, 255, 255, 0.61)100%, transparent 100%), url(grafika/roundtable-828546_640.jpg) no-repeat;
+                   background-position: center;
+                   background-size: cover;
+                }
+                #third {
+                   background: linear-gradient( rgba(255, 255, 255, 0.61)100%, transparent), url(grafika/building-plan-354233_640.jpg)no-repeat;
+                   background-position: center;
+                   background-size: cover;
+                }
+                #carousel-generic {
+                   height: 250px;
+                   .carousel-indicators {
+                      li {
+                         background-color: gray;
+                         &:hover {
+                            background-color: lightblue;
+                         }
+                      }
+                   }
+                   .carousel-inner {
+                      text-align: center;
+                      .item {
+                         height: 250px;
+                         background: rgba(173, 216, 230, 0.99);
+                         .carousel-caption {}
+                      }
+                   }
+                   .left {}
+                }
+             }
+          }
+          .col-lg-12 {
+             background-color: white;
+             padding: 20px;
+             text-align: center;
+             line-height: 30px;
+             letter-spacing: 1px;
+          }
+          //map
+          iframe {
+             width: 100%;
+             height: 250px;
+          }
+          footer {
+             padding: 50px;
+             text-align: center;
+             .format();
+             a {
+                transition: all 1s;
+                &:hover {
+                   transform: scale(1.5);
+                   -moz-transform: scale(1.5);
+                   -o-transform: scale(1.5);
+                   -webkit-transform: scale(1.5);
+                }
+             }
+             //icon img
+             img {
+                border-radius: 23px;
+                padding: 10px;
+                margin-right: 10px;
+                &:hover {
+                   cursor: pointer;
+                   background-color: rgba(163, 213, 239, 0.51);
+                }
+             }
+          }
+       }
